@@ -34,7 +34,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.theme {
+.themeBox {
     text-align: right;
     margin-bottom: 20px;
 }
@@ -43,7 +43,7 @@ body {
     font-size: 24px;
     color: #fff;
     cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: 0.3s ease, color 0.3s ease;
 }
 
 .themeIcon:hover {
@@ -140,6 +140,9 @@ body {
     .calculator {
         width: 90%;
     }
+}
+
+@media (max-width: 800px) {
     .btn.btn:hover::after {
         width: 0;
         height: 0;
@@ -154,6 +157,14 @@ body {
     }
     .equal:hover {
         background: linear-gradient(45deg, #00c6fb 0%, #005bea 100%);
+    }
+    .themeIcon:hover {
+        transform: rotate(0);
+        color: #fff;
+    }
+    .themeIcon:active {
+        transform: rotate(30deg);
+        color: #ffd700;
     }
 }
 
